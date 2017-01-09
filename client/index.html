@@ -1,245 +1,285 @@
 <html>
 <head>
-    
-<meta property="og:url"                content="http://drcool.club" />
-    
-<meta property="og:type"               content="website" />
-<meta property="og:title"              content="Dr Cool" />
-<meta property="og:description"        content="welcome to... DR COOL: AWARDS for Mourning Coup - Master" />
-<meta property="og:image"              content="http://i.imgur.com/qXKvjNm.gif" />
-    
-<style type="text/css">
-    body{
-        margin:0;
-        padding:0;
-    }
-    .content, .content * {
-        z-index:10;
-        position:relative;
-    
-    }
 
-    h3{
-        margin:0.25em;
-    }
-    h1{
-        margin:0.2em 1.5em;
-    }
-    .blacklink, .blacklink:visited, .blacklink:active{
-        color:black;
-        text-decoration: none;
-    }
+	<meta property="og:url" content="http://drcool.club"/>
 
-    #navigation, #posters{
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        width:100vw;
-        margin:0;
-        padding:0;
-        z-index:10;
-        position:relative;
-    }
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Dr Cool"/>
+	<meta property="og:description" content="welcome to... DR COOL: AWARDS for Mourning Coup - Master"/>
+	<meta property="og:image" content="http://i.imgur.com/qXKvjNm.gif"/>
 
-    #posters{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
 
-    #posters li, posters img{
-        max-width: 100vw;
-    }
+		.content, .content * {
+			z-index: 10;
+			position: relative;
 
-    li{
-        padding:0.25em;
-        text-align: center;
-        list-style-type: none;
-    }
+		}
 
-    #container{
-        text-align: center;
-        z-index:1;
-    }
+		h3 {
+			margin: 0.25em;
+		}
 
-    .playingWithFire{
-        
-        max-width:100vw;
-    }
-    
-    iframe:not(.playingWithFire){
-        width:33vw;
-        min-width:300px;
-        margin:0;
-        padding:0;
-        display:inline-block;
-    }
-    
-    div .curtain{
-        height:100vh;
-        width:100vw;
-        position:absolute;
-        top:0;
-        left:0;
-        background:url('http://i.imgur.com/T7Ry9rE.jpg');
-        z-index:1;
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: 120vw 120vh;
-        background-position-x: -10vw;
-        background-position-y: -10vh;
-    }
-    
-    .movie *, .movie a:visited, .movie a:active{
-    color:white;
-    }
-    
-    .director img{
-        max-width:90vw;
-    }
-    
-    .banner {
-        display:flex;
-        width:100%;
-    }
-    .banner img{
-        position:relative;
-        margin:3em auto 3em auto;
-    }
+		h1 {
+			margin: 0.2em 1.5em;
+		}
 
-    #awards li{
-        display:inline-block;
-        max-width:25vw;
-    }
+		.blacklink, .blacklink:visited, .blacklink:active {
+			color: black;
+			text-decoration: none;
+		}
 
-    #awards li img{
-        width:100%;
-    }
+		#navigation, #posters {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100vw;
+			margin: 0;
+			padding: 0;
+			z-index: 10;
+			position: relative;
+		}
 
-    .award {
-        position:absolute;
-        max-width:20vw;
-        z-index:20;
-    }
+		#posters {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 
-    .corner1 {
-        width: 10em;
-        left:1.5em;
-        top:0;
-        margin-top:-3em;
-    }
-    .corner2 {
-            width: 10em;
-        right:1.5em;
-        top:0;
-        margin-top:-3em;
-    }
-    
-</style>
+		#posters li, posters img {
+			max-width: 100vw;
+		}
+
+		li {
+			padding: 0.25em;
+			text-align: center;
+			list-style-type: none;
+		}
+
+		#container {
+			text-align: center;
+			z-index: 1;
+		}
+
+		.playingWithFire {
+
+			max-width: 100vw;
+		}
+
+		iframe:not(.playingWithFire) {
+			width: 33vw;
+			min-width: 300px;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+		}
+
+		div .curtain {
+			height: 100vh;
+			width: 100vw;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url('http://i.imgur.com/T7Ry9rE.jpg');
+			z-index: 1;
+			position: fixed;
+			background-repeat: no-repeat;
+			background-size: 120vw 120vh;
+			background-position-x: -10vw;
+			background-position-y: -10vh;
+		}
+
+		.movie *, .movie a:visited, .movie a:active {
+			color: white;
+		}
+
+		.director img {
+			max-width: 90vw;
+		}
+
+		.banner {
+			display: flex;
+			width: 100%;
+		}
+
+		.banner img {
+			position: relative;
+			margin: 3em auto 3em auto;
+		}
+
+		#awards li {
+			display: inline-block;
+			max-width: 25vw;
+		}
+
+		#awards li img {
+			width: 100%;
+		}
+
+		.award {
+			position: absolute;
+			max-width: 20vw;
+			z-index: 20;
+		}
+
+		.corner1 {
+			width: 10em;
+			left: 1.5em;
+			top: 0;
+			margin-top: -3em;
+		}
+
+		.corner2 {
+			width: 10em;
+			right: 1.5em;
+			top: 0;
+			margin-top: -3em;
+		}
+
+	</style>
 </head>
 <body>
 <div ng-app='drcool'>
-    <div ui-view="bg"></div>
-    <div class="content" ng-controller='drcoolCtrl' ng-class="{movie: isMovie()}">
-    
-        <h3>welcome to..</h3>
-            <h1>
-                <i>
-                    <a href="http://drcool.club" class="blacklink">
-                        dr cool
-                    </a>
-                </i>           
-            </h1>
-        
-        <ul id="navigation">
-            <li><a class="blacklink" ui-sref="movie">The Playing With Fire</a></li>
-            <li><a class="blacklink" ui-sref="videos" >Music Videos</a></li>
-            <li><a class="blacklink" ui-sref="awards" >AWARDS</a></li>
-            <li><a class="blacklink" href="http://montreal.craigslist.ca/clo/5313163860.html">Merch</a></li>
-<!--            <li><a class="blacklink">FAQ</a></li>-->
-            <li><a class="blacklink" ui-sref="meet-the-director">Meet the Director!</a></li>
-        </ul>
-            
-            <br/><br/><br/>
+	<div ui-view="bg"></div>
+	<div class="content" ng-controller='drcoolCtrl' ng-class="{movie: isMovie()}">
 
-        <div id="container" ui-view="main">
-        </div>
-        <div class='banner'>
-            <img src="http://i.imgur.com/RGx6B6e.gif"/>
-        </div>
+		<h3>welcome to..</h3>
+		<h1>
+			<i>
+				<a href="http://drcool.club" class="blacklink">
+					dr cool
+				</a>
+			</i>
+		</h1>
 
-           
-            
-            
-        <br />
-    </div>
-    </div>
+		<ul id="navigation">
+			<li><a class="blacklink" ui-sref="movie">The Playing With Fire</a></li>
+			<li><a class="blacklink" ui-sref="videos">Music Videos</a></li>
+			<li><a class="blacklink" ui-sref="awards">AWARDS</a></li>
+			<li><a class="blacklink" href="http://montreal.craigslist.ca/clo/5313163860.html">Merch</a></li>
+			<!--            <li><a class="blacklink">FAQ</a></li>-->
+			<li><a class="blacklink" ui-sref="meet-the-director">Meet the Director!</a></li>
+		</ul>
+
+		<br/><br/><br/>
+
+		<div id="container" ui-view="main">
+		</div>
+		<div class='banner'>
+			<img src="http://i.imgur.com/RGx6B6e.gif"/>
+		</div>
+
+
+		<br/>
+	</div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-    
-    <script type='text/javascript'>
-        var drcool = angular.module('drcool',['ui.router'])
-        
-        drcool.config(function($stateProvider,$urlRouterProvider){
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 
-            $stateProvider
-            .state('main',{
-                url:'',
-                views:{
-                 'main':{
-                    templateUrl:'views/posters.html'
-                    }   
-                }
+<script type='text/javascript'>
+	var drcool = angular.module('drcool', ['ui.router'])
 
-            })
-            .state('movie',{
-                url:'/PlayingWithFire',
-                views:{
-                    'main':{
-                        templateUrl:'views/movie.html'
-                    },
-                    'bg':{
-                        template:'<div class=curtain></div>'    
-                    }
-                }
-            })
-            .state('videos',{
-                url:'/Videos',
-                views:{
-                    'main':{
-                        templateUrl:'views/videos.html'
-                    }
-                }
-            })
-            .state('awards',{
-                url:'/awards',
-                views:{
-                    'main':{
-                        templateUrl:'views/awards.html'
-                    }
-                }
-            })
-            .state('meet-the-director',{
-                url:'/meet-the-director',
-                views:{
-                    'main':{
-                        templateUrl:'views/meet-the-director.html'
-                    }
-                }
-            })
-        });
-        drcool.controller('drcoolCtrl', function($scope, $state){
-        
-            $scope.donated = false;
-            $scope.$state = $state;
-            $scope.isMovie = function(){
+	drcool.config(function ($stateProvider, $urlRouterProvider) {
+
+		$stateProvider
+				.state('main', {
+					url: '',
+					views: {
+						'main': {
+							templateUrl: 'views/posters.html'
+						}
+					}
+
+				})
+				.state('movie', {
+					url: '/PlayingWithFire',
+					views: {
+						'main': {
+							templateUrl: 'views/movie.html'
+						},
+						'bg': {
+							template: '<div class=curtain></div>'
+						}
+					}
+				})
+				.state('videos', {
+					url: '/Videos',
+					views: {
+						'main': {
+							templateUrl: 'views/videos.html',
+
+							controller: function ($scope, $sce, videos) {
+								$scope.videos = videos;
+								$scope.iframeUrl = function(id){
+									return $sce.trustAsResourceUrl('https://www.youtube.com/embed/'+id);
+								}
+							}
+						}
+					},
+					resolve: {
+						videos: function ($http, $log) {
+							var base = 'https://www.googleapis.cm/youtube/v3/playlistItems';
+							var params = {
+								key: 'AIzaSyAewvcdV-iHwnjhRHjeOHr7V_0_YsUVyzU',
+								playlistId: 'PLbcArLTjVkkbkLtQwrBNBNJaz6-RhDZYW',
+								part: 'snippet',
+								maxResults: 50
+							};
+
+							return $http.get(base, {params: params})
+									.then(function (result) {
+										if (result && result.data && result.data.items ) {
+											return result.data.items;
+										}
+									})
+									.then(function(items){
+										 return _.map(items, function(item){
+											 return _.get(item, 'snippet.resourceId.videoId')
+										 })
+									})
+									.catch(function(err){
+										$log.error(err);
+										return [];
+									})
+
+						}
+					}
+				})
+				.state('awards', {
+					url: '/awards',
+					views: {
+						'main': {
+							templateUrl: 'views/awards.html'
+						}
+					}
+				})
+				.state('meet-the-director', {
+					url: '/meet-the-director',
+					views: {
+						'main': {
+							templateUrl: 'views/meet-the-director.html'
+						}
+					}
+				})
+	});
+	drcool.controller('drcoolCtrl', function ($scope, $state) {
+
+		$scope.donated = false;
+		$scope.$state = $state;
+		$scope.isMovie = function () {
 //                console.log('state is ',$state);
-                return $state.current.name === 'movie';
-            }
-            
-            
-        });
-        
-        
-    </script>
+			return $state.current.name === 'movie';
+		}
+
+
+	});
+
+
+</script>
+
 </body>
 </html>
