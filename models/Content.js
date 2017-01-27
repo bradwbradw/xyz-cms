@@ -5,7 +5,10 @@ var Types = keystone.Field.Types;
  * User Model
  * ==========
  */
-var Content = new keystone.List('Content');
+var Content = new keystone.List('Content', {
+    plural:'content',
+	autokey: { path: 'slug', from: 'name', unique: true },
+});
 
 Content.add({
 	name: { type: String, required: true, index: true, unique: true },
