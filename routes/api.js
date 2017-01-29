@@ -1,6 +1,6 @@
 var express = require('express');
 var keystone = require('keystone');
-
+var _ = require('lodash');
 var router = express.Router()
 var Content = keystone.list('Content');
 
@@ -13,10 +13,10 @@ router.use(function timeLog (req, res, next) {
 router.get('/content', function (req, res) {
   
 		Content.model.find().exec()
-			.then(function (content) {
-
-               
-				res.json(content);
+			.then(function (results) {
+               var content = _.keyBy(results, 'slug');
+           
+				res.json(content || []);
 			},function (err) {
 			console.error(err);
 			res.status(500).json({error: err});
