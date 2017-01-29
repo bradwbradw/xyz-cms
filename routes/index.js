@@ -31,10 +31,13 @@ var routes = {
 	views: importRoutes('./views'),
 };
 
+var api = require('./api');
+
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// Views
 	app.get('/cms', routes.views.index);
+    app.use('/api', api);
 
 /*
 	app.get('/blog/:category?', routes.views.blog);
