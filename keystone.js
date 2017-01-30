@@ -29,8 +29,8 @@ keystone.init({
 		defaultLayout: 'default',
 		helpers: new require('./templates/views/helpers')(),
 		extname: '.hbs',
-	}).engine,
-
+	}).engine, 	
+        'session store': 'mongo', 
 	'auto update': true,
 	'session': true,
 	'auth': true,
