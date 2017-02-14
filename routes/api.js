@@ -16,6 +16,7 @@ router.get('/content', function (req, res) {
 			.then(function (results) {
                var content = _.keyBy(results, 'slug');
            
+				res.set('Access-Control-Allow-Origin', '*');
 				res.json(content || []);
 			},function (err) {
 			console.error(err);
